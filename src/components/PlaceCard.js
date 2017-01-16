@@ -12,11 +12,12 @@ const PlaceCard = props => {
         <div className="col-md-6">
           <div className="description-pane">
             <p className="description">
-              Narnia is a kingdom ruled over by a lion called Aslan. Once in a
+              <i className="atlas">Atlas: </i>Narnia is a kingdom ruled over by a lion called Aslan. Once in a
               while children from the real world will stumble into Narnia through
               a wardrobe.
             </p>
 
+            <i className="atlas">Things to do...</i>
             <ul className="todos">
               <li className="todo">Tea with Mr. Tumnus</li>
               <li className="todo">Turkish delight with the witch</li>
