@@ -1,0 +1,63 @@
+html, body {
+  background-color: #fafafa;
+}
+
+.row {
+  min-height: 125px;
+}
+
+.main {
+  min-height: 350px;
+}
+
+.placecard {
+  height: 100%;
+}
+
+.placecard .row {
+  height: 100%;
+}
+
+.col-md-2 {
+  border: 1px solid black;
+}
+.col-md-3 {
+  border: 1px solid black;
+}
+.col-md-6 {
+  border: 1px solid black;
+  padding: 0px;
+}
+.col-md-8 {
+  border: 1px solid black;
+  padding: 0px;
+}
+
+.place {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.fg-pane {
+  background-image: url('../public/images/narnia-fg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.description-pane {
+  z-index: 1;
+  padding: 15px;
+}
+
+.description {
+  font-size: 90%;
+}
+
+.todos {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  font-size: 80%;
+}
