@@ -34,12 +34,15 @@ html, body {
 
 .place {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 10px;
+  left: 10px;
+  background-color: #fafafa;
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 3px;
 }
 
 body {
-  background-image: url('../public/images/narnia-bg.jpg');
   background-size: cover;
   background-position: center;
   padding: 15px;
@@ -55,7 +58,6 @@ body {
 }
 
 .fg-pane {
-  background-image: url('../public/images/narnia-fg.jpg');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -87,4 +89,8 @@ body {
 .fa {
   color: #fff;
   font-size: 8vh;
+}
+
+.right-arrow {
+  text-align: right;
 }

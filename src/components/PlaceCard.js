@@ -1,28 +1,25 @@
 import React from 'react';
 
 const PlaceCard = props => {
+  const { place, description, todos } = props.place;
   return (
     <div className="container placecard">
       <div className="row">
         <div className="col-md-6">
           <div className="fg-pane">
-            <h2 className='place'>Narnia</h2>
+            <h2 className='place'>{place}</h2>
           </div>
         </div>
         <div className="col-md-6">
           <div className="description-pane">
             <p className="description">
-              <i className="atlas">Atlas: </i>Narnia is a kingdom ruled over by a lion called Aslan. Once in a
-              while children from the real world will stumble into Narnia through
-              a wardrobe.
+              <i className="atlas">Atlas: </i>
+              {description}
             </p>
 
             <i className="atlas">Things to do...</i>
             <ul className="todos">
-              <li className="todo">Tea with Mr. Tumnus</li>
-              <li className="todo">Turkish delight with the witch</li>
-              <li className="todo">Be a son or daughter of Adam/Eve or other
-                if gender is a social construct</li>
+              {todos.length > 0 ? todos.map((todo, i) => <li key={i} className="todo">{todo}</li>) : <div>Nothing!</div>}
             </ul>
           </div>
         </div>
